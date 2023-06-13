@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="631.2,14874.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234.4,15061.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -101,7 +101,7 @@
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="641.6,14809.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="641.6,14996.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="SalidaDatos" />
       <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="SalidaCui" />
@@ -123,19 +123,19 @@
       </Assign.Value>
     </Assign>
     <ui:ReadRow DisplayName="Read Row Workbook" sap:VirtualizedContainerService.HintSize="579.2,88" sap2010:WorkflowViewState.IdRef="ReadRow_1" Result="[SalidaDatos]" SheetName="DatosTransmision" StartingCell="A2:B2" WorkbookPath="[Convert.toString(ExcelPath)]" />
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="579.2,5145.6" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.facebook.com/">
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="579.2,5185.6" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.facebook.com/">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="545.6,5043.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="545.6,5083.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe  Facebook'" sap:VirtualizedContainerService.HintSize="483.2,4931.2" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="20b4bc701a4b247bc8362d8fa62ebb9f" Selector="&lt;html app='chrome.exe' title='Facebook' /&gt;">
+            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe  Facebook'" sap:VirtualizedContainerService.HintSize="483.2,4971.2" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="20b4bc701a4b247bc8362d8fa62ebb9f" Selector="&lt;html app='chrome.exe' title='Facebook' /&gt;">
               <ui:BrowserScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -737,25 +737,25 @@
         <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="477e20b80138b0166fff0bb99b81fda7.jpg" Selector="&lt;html app='chrome.exe' title='Consulta de Empadronamiento' /&gt;" Title="Consulta de Empadronamiento" Url="https://tse.org.gt/index.php/sistema-de-estadisticas/consulta-de-afiliacion" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="579.2,1764" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://dondevotas2023.tse.org.gt/">
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="579.2,1911.2" sap2010:WorkflowViewState.IdRef="OpenBrowser_2" Url="https://dondevotas2023.tse.org.gt/">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="545.6,1661.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="545.6,1808.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe SISTEMA'" sap:VirtualizedContainerService.HintSize="483.2,1549.6" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="1251bdc0aaac7d087421589361326ce3" Selector="&lt;html app='chrome.exe' title='SISTEMA DONDE VOTAS WEB' /&gt;">
+            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe SISTEMA'" sap:VirtualizedContainerService.HintSize="483.2,1696.8" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="1251bdc0aaac7d087421589361326ce3" Selector="&lt;html app='chrome.exe' title='SISTEMA DONDE VOTAS WEB' /&gt;">
               <ui:BrowserScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="449.6,1402.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="449.6,1549.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -854,6 +854,28 @@
                       </ui:Click.Target>
                     </ui:Click>
                     <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_19" />
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'outline item  Descargas'" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="Click_41" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e76a7ed2-0e72-429f-8152-d523622879e1" InformativeScreenshot="cc433c0fa001df860c7b194cfb8f5848" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Guardar como' /&gt;&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Controlar host' cls='NamespaceTreeControl' title='Control de árbol de espacios de nombres' /&gt;&lt;wnd ctrlid='100' title='Vista en árbol' /&gt;&lt;ctrl name='Descargas' role='outline item' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
                     <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="Click_24" KeyModifiers="None" MouseButton="BTN_LEFT">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
